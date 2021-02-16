@@ -11,7 +11,14 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+    'name' => 'Allotments',
     'components' => [
+        'formatter' => [
+            'locale' => 'en_GB',
+            'language' => 'en-GB',
+            'dateFormat' => 'yyyy-MM-dd',
+            'currencyCode' => 'GBP',
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'nVn3p9LOR5XYlb4V-qSnygB1eL2P1k6Q',
@@ -32,6 +39,7 @@ $config = [
             // 'useFileTransport' to false and configure a transport
             // for the mailer to send real emails.
             'useFileTransport' => true,
+            'fileTransportPath' => '@app/data/mail',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

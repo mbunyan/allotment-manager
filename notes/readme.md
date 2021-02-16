@@ -10,6 +10,13 @@ The tenant agrees T&C with land owner and rents a plot for up to one year, with 
 
 A record is required to record and match plots with tenants, record compliance, record rent demands and payment.
 
+## PHP
+Developed using PHP >7.4.13. Not PHP 8, though probably works OK.
+- run PHP web serve from app\web root
+- php.ini for development only  added to notes
+- ```php -S localhost:88 -t .``` or similar
+- VMs, Docker, Vagrant not required unless separate environment required
+
 ## Mock data
 - Uses SQLite 3 for database
 - Primary source: Office for National Statistics (ONS)
